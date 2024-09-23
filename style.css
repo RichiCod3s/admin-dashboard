@@ -1,0 +1,70 @@
+body,html{
+    margin: 0;
+}
+
+.container{
+    margin: 0;
+    background-color: aqua;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar{
+    background-color: rgb(93, 139, 224);
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.header{
+    background-color: white;
+    grid-column: 2 / span 5;
+    
+}
+
+.main-content{
+    background-color: rgb(195, 221, 221);
+    grid-column: 2/ span 5;
+}
+
+.logo{
+    height: 3rem;
+    color: white;
+    margin: 4px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container h3{
+    color: white;
+}
+
+.icon{
+    color: white;
+    height: 1rem;
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#home{
+    margin-top: 1.5rem;
+}
+#settings{
+    margin-top: 2.5rem;
+}
+.nav div{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    margin-bottom: 0.8rem;
+}
