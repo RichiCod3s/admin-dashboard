@@ -150,3 +150,110 @@ body,html{
     transform: translateY(1px); /* Move the button down slightly */
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2); /* Inner shadow for depth */
 }
+
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    overflow: auto;
+}
+
+.projects-container h5{
+    margin: 0;
+    margin-left: 1rem;
+    padding: 10px 0 5px 0;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 0 1rem 0 1rem;
+    
+}
+.card{
+    background-color: azure;
+    border-left-color: orange;
+    border-radius: 8px;
+    border-left-style: solid;
+    border-left-width: 5px;
+    height: 8rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+.card-text{
+    flex-grow: 1; 
+}
+
+.card-text p{
+    font-size: 10px;
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+.card-text h6{
+    padding: 1rem 0 2px 1rem;
+    margin: 0;
+}
+
+
+.card-icon{
+    height: 1rem;
+  margin: 0.5rem; 
+}
+
+.card-icon-container{
+  display: flex;
+  justify-content: end;
+  align-items: center; 
+  padding-right: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  grid-row: 2; 
+}
+
+.main-content-column-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.announcement-box{
+    background-color: white;
+    height: auto;
+    width: 12rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 211, 211);
+    border-bottom-width: 2px;
+    
+}
+/* Silver border for announcements - after each one except the last child*/
+.announcements:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: silver;
+    margin: 1rem auto 1rem auto; 
+}
+.announcement-box h6{
+    padding: 0;
+    margin: 0;
+}
+
+.announcement-box p{
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+}
+.announcement-container h5{
+    margin: 0;   
+    padding: 1rem 0 2px 0;
+}
+
+.announcement-container{
+    
+    
+}
