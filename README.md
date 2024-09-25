@@ -13,3 +13,4 @@ This project is a simple Admin Dashboard interface built with HTML and CSS, feat
 
 - This project is **only** for practice and does not have any working features.
 - There is no JavaScript or backend functionality implemented.
+- This project was developed using a resolution of 1280x650 and lacks full responsive design, so the layout may not display correctly on different screen sizes. Increasing the zoom on higher resolution will show the desired effect
